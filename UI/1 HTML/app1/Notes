@@ -1,0 +1,35 @@
+HTML Notes
+-------------
+1. static web pages
+2. Head, Body and footer
+
+ELEMENT / Tag / node
+-----------------------
+
+<img> <p>  <button>  <marquee>
+
+Tags Tyeps
+1. Closing Tags
+    <h1></h1> , <button> Click Here</button>
+
+2. Self CLosing Tags
+    <hr/>   <br/>      
+
+<html>
+    <head>
+        <title> </title>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
