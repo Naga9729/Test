@@ -1,0 +1,34 @@
+
+@import './text-styles.css';
+.s1{
+    color: red;
+    font-size: 50px;
+}
+.s2{
+    color: blue;
+    font-size: 180px;
+}
+
+.s3{
+    border: 1px;
+    color: yellow;
+    border-radius: 10px;
+}
+
+
+.s4{
+margin: 20px;
+}
+
+#id1{
+    color: green;
+    font-weight: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: bold;
+    font-size: 100px;
+}
+
+#id2{
+    color: yellow;
+    font-size: 80px;
+}

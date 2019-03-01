@@ -1,0 +1,17 @@
+CSS (Cascading style sheet)
+
+1. HTML to design static web pages
+2. CSS to apply styling to the HTML pages
+
+CSS
+-------
+1. Inline style sheets
+2. External style sheets
+
+1. class
+2. ID
+
+
+
+
+
