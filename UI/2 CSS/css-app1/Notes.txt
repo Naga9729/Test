@@ -9,7 +9,15 @@ CSS
 2. External style sheets
 
 1. class
-2. ID
+    => stats with dot (.)
+2. ID 
+    => starts with (#)
+
+
+External CSS
+---------------
+finame.css
+<link href="mystyle.css" rel="stylesheet" type="text/css">
 
 
 
