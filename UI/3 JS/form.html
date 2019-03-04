@@ -7,6 +7,8 @@
     <style>
     span{
         color: red;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
     </style>
 </head>
@@ -17,11 +19,13 @@
    
     <form action="abc.com/saveData" onsubmit="return validateForm()">
 
-        First Name: <input type="text" id="fn" name="fn">
+        First Name: <input type="text" id="fn" name="fn" onkeyup="validateForm()">
         <span id="fn.err"></span> <br/>
         Last Name: <input type="text" id="ln" name="ln">
         <span id="ln.err"></span><br/>
-        Email: <input type="email" required>
+        Age: <input type="number" min="18" max="90" id="ln" name="ln">
+        <span id="ln.err"></span><br/>
+        <!-- Email: <input type="email"> -->
 
        
         <br>
