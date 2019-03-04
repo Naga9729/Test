@@ -1,5 +1,4 @@
 
-"use strict"
 
 console.log("-scopes-");
 
@@ -63,8 +62,8 @@ f1(); // f1-scope <== global-scope
 // -------------------------------------------------
 
 var v = 12;
-function f1() {
-    function f2() {
+function f1() { // f1 scope
+    function f2() { // f2 << f1 
         console.log(v)
     }
     f2();
