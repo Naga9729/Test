@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script src="./data.js"></script>
+    <title>JSON Example</title>
+</head>
+<body>
+
+    <h1> JSON Demo_</h1><hr/>
+
+
+    <div id="myData">
+
+Sample Data
+    </div>
+
+<button onclick="loadData()">Load data</button>
+
+    <script>
+            function loadData() {
+              var xhttp = new XMLHttpRequest(); //XHR
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  document.getElementById("myData").innerHTML =
+                  this.responseText;
+                }
+              };
+              xhttp.open("GET", "http://localhost:8081/api/products", true);
+              xhttp.send();
+            }
+            </script>
+    
+</body>
+</html>

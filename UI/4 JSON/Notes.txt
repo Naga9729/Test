@@ -1,0 +1,49 @@
+JSON (Java Script Object Notation)
+-------------------------------------
+-> Exchange data from one language to another language
+-> Json supports text format
+-> JSON supportted by all the languages
+-> JSON file extension is .json
+-> Its an ectension to Java Script
+-> Json does not store data
+
+
+Syntax
+-------
+{ 
+}
+
+Rules
+-------
+-> Every JSON must have key and value pares
+-> Key must be defined in double quotes
+-> Value can be anuthing
+-> : (colon) must be used to separate key and value
+-> JSON syntax must be validated from JSON parsers
+-> Key must be unique
+Ex:
+{
+    "name:"Praveen",
+    "id":1024,
+    "desig":"Trainer"
+}
+
+Note
+-----
+-> In order to read data from JSON, you must assign
+    an object-name  to the JSON data  
+
+emp={
+    "name:"Praveen",
+    "id":1024,
+    "desig":"Trainer"
+}
+
+How to Read data from JSON?
+---------------------------------
+-> . (dot) operator to read data from JSON 
+
+Ex: emp.name -> Praveen
+    emp.desig -> Trainer
+
+

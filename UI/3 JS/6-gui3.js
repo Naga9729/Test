@@ -5,9 +5,7 @@ function validateForm() {
 
     let status = true;
     if (!(fn.search(/[^a-zA-Z]+/) === -1)) {
-       //  alert("Only characters");
         document.getElementById("fn.err").innerHTML = "First name should not contains special characters and numbers";
-       // document.getElementById("fn.err").innerHTML = "First name required";
         status = false;
 
     }
