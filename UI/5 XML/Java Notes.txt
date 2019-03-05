@@ -1,0 +1,69 @@
+java SE
+---------
+
+1.OOPS
+--------
+-> class 
+-> object
+-> Encapulation
+    -> access modifies
+            -> private
+            -> public
+            -> default
+            -> protected
+    -> packages
+    -> POJO (Plain old java object) / bean / model / entity
+-> Inheritance
+-> Abstraction
+    -> abstract classes
+-> Ploymorphism
+    -> interfaces
+-----------------------
+60%
+
+2. java .lang
+----------------
+-> String/StringBuffer/StringBuilder
+-> object
+-> Wraper classes
+-> Garbage Collection
+-> Exception Handling
+-> Threads
+
+----------------------
+80%
+
+3. java api
+---------------
+1. java.io
+2. java.util
+----------------
+100%
+
+-----------------------------------------
+
+1. JDBC
+2. XML
+
+------------------------------------------
+
+Enterprise Application development
+
+1. Servlet
+2. JSP / JSTl /EL
+3. JSF
+4. EJB
+5. JPA
+6. JTA
+8. JAXP / JAXB
+9. JMS
+------------------------------------
+
+java framwrorks
+----------------
+1. Struts -> web development
+2. Hibernate/toplink/ ibatics -> DB development
+3. Spring
+
+
+
