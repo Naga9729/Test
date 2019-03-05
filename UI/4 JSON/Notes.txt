@@ -47,3 +47,10 @@ Ex: emp.name -> Praveen
     emp.desig -> Trainer
 
 
+HTTP Statis Codes
+---------------------
+1x: 100 to 199  -> Information
+2x: 200 to 299  -> Success 
+3x: 300 to 399  -> Redirection
+4x: 400 to 499  -> Client side error
+5x: 500 to 599  -> server side error

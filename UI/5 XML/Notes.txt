@@ -1,0 +1,70 @@
+XML (Extensible Markup Language)
+--------------------------------------
+-> is used to exchange data from one language to another
+   language
+-> Its a language independent
+-> Will not have any pre defined tags
+-> XML will  store data, but will not for presentation 
+    purpose
+
+Notes
+---------
+-> XML is not in the text format. Its having
+   own syntax rules
+
+-> If you are using Java to write or read data from XML,
+   then
+   --> JAXB (Java API for XML binding) -> to Write to XML
+   --> JAXP (Java API for XML prossesing)
+            -> read data from XML
+
+JAXB is a parser
+DOM -> Parser
+
+
+-------------------------------
+Rules to Form Simple XML file
+
+1. XMl is case sentive
+2. XML must have only single root element
+3. Every element must have corresponding closing element
+Ex:
+<employee>
+    <name>Praveen</name>
+    <id>8464</id>
+</employee>
+
+XML Validatuions
+-----------------
+1. XML must be in well formed
+
+Validatuions
+-----------
+1. DTD (Document type Defination)
+    -> one data type:  #PCDATA
+2. XSD (XML schema document)
+    -> int, float. date, string
+
+Web Services
+-----------------
+1. SOAP -> XML
+    -> JAX-WS 
+        -> Sun Java (Oracle)
+            -> Apache Axs-Server
+2. REST -> JSON /text
+    -> JAX RS
+            > Sun Java (Oracle)
+                -> Rest Easy
+                -> Jersy (2)
+            > Spring Framework
+                -> Spring rest api(99)
+
+
+
+
+
+
+
+
+
+
