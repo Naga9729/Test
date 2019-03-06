@@ -34,6 +34,32 @@ Loosely coupled
 -> Extension of an application is possible with this approach
 Ex: interfaces
 
+Notes
+-------
+1. An interface can extends to more than one interface
+2. An interface can not implements another interface
+3. A class can implement more than one interface
+4. A class can not extends to another interface
+5. A class can extends to only one  another class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
