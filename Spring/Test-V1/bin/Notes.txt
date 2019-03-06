@@ -1,0 +1,40 @@
+Notes
+----------------
+
+Types of Objects
+---------------------
+1. Dependency object
+2. Dependent object
+
+
+1. Dependency object
+---------------------------
+-> This type of objects works independently.
+-> They never dependent on any other class objects
+-> Usually this type of object are top level class hierarcy 
+	i.e -> may be data base class objects or any other service class objects
+
+2. Dependent object
+--------------------------
+-> This type of objects, always depends on dependency object classes
+-> Any changes on dependency will impact on dependent objects
+
+
+Tightly couple approach
+---------------------------
+-> If a class dependents on other class, and because of dependency class
+   changes, all the dependent classes get effected. This is tightly coupled
+-> Extenson of application not possible in this type
+Ex: Abstract classes
+
+Loosely coupled
+-------------------
+-> All class objects are independently working together, then this is called 
+   loosely coupled approach
+-> Extension of an application is possible with this approach
+Ex: interfaces
+
+
+
+
+
