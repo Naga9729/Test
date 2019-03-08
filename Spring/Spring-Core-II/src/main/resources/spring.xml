@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="emp" class="com.Employee" autowire="byType">
+		<property name="empId" value="10" />
+		<property name="empName" value="Praveen" />
+		<property name="salary" value="58645" />
+		<!-- <property name="dept" ref="dept124" /> -->
+	</bean>
+
+	<bean id="proj" class="com.Project">
+		<property name="projId" value="Proj0001" />
+		<property name="projName" value="Project1" />
+		<property name="loc" value="Chennai" />
+
+	</bean>
+
+
+	<!-- <bean id="dept1" class="com.Department"> -->
+
+	<!-- <property name="deptId" value="1024" /> -->
+	<!-- <property name="deptName" value="HR" /> -->
+
+	<!-- </bean> -->
+
+	<bean id="dept1234" class="com.Department">
+
+		<property name="deptId" value="1025" />
+		<property name="deptName" value="Accounts" />
+
+	</bean>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>
