@@ -7,6 +7,7 @@ import com.cts.product.bean.Product;
 @Repository
 public class ProductDaoImpl implements ProductDao {
 
+	
 	public void saveProduct(Product product) {
 		System.out.println("Dao: Saving " + product.getProdName());
 	}
