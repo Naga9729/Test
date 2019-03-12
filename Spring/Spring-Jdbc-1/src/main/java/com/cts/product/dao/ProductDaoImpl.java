@@ -2,6 +2,7 @@ package com.cts.product.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -26,8 +27,8 @@ public class ProductDaoImpl {
 
 	// find Product by Id
 	public Product findById(String id) {
-		String qry = "select * from product where id=?";
-		return jt.queryForObject(qry, Product.class, id);
+		String qry = "select id,name,price,description from product where id=?";
+		return jt.queryForObject(qry, new FindProductRowMapper(), id);
 	}
 
 	// find Product by name
@@ -35,36 +36,63 @@ public class ProductDaoImpl {
 		String qry = "select * from product where name like ?";
 		return jt.queryForList(qry, name);
 	}
-	
-	// display all records using rowmapper interface
+
+	// listing all records
 	
 	public List<Product> listAll(){
-		String qry="select * from product";
-		return (List<Product>) jt.queryForObject(qry, new ListProductsRowMapper());
+		return jt.queryForObject("select * from product", new ListAllProductsRowMapper());
 	}
-	
-	// display all records using ResultsetExctaractor
-	
-	//public List<Product> listAll_v1(){
-		
-	//}
+
+	// display all records using rowmapper interface
+
 }
 
-class ListProductsRowMapper implements RowMapper<Product> {
+// for getting single Product 
+class FindProductRowMapper implements RowMapper<Product> {
 
 	public Product mapRow(ResultSet rs, int rowNum) throws SQLException {
+		Product p = null;
 
-		Product product = new Product();
-		if (rs.next()) {
+		p = new Product();
+		p.setId(rs.getString("id"));
+		p.setName(rs.getString("name"));
+		p.setPrice(rs.getDouble("price"));
+		p.setDescription(rs.getString("description"));
 
-			product.setId(rs.getString("id"));
-			product.setName(rs.getString("name"));
-			product.setPrice(rs.getDouble("price"));
-			product.setDescription(rs.getString("description"));
-
-		}
-
-		return product;
+		return p;
 	}
 
+} // end of find product class
+
+// for listing all products
+class ListAllProductsRowMapper implements RowMapper<List<Product>>{
+
+	public List<Product> mapRow(ResultSet rs, int rowNum) throws SQLException {
+		List<Product> prods=new ArrayList<Product>();
+		while(rs.next()) {
+		Product p=new Product();
+		p.setId(rs.getString("id"));
+		p.setName(rs.getString("name"));
+		p.setPrice(rs.getDouble("price"));
+		p.setDescription(rs.getString("description"));
+		prods.add(p);
+		}
+		return prods;
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

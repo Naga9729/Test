@@ -20,6 +20,17 @@ public class AppConfig {
 	private Environment env; // have access to all keys from application.properties
 	
 	// 1. Create Data source
+	/*
+	 *   javax.DataSource -> Datasource
+	 *   	Third party data sources
+	 *   	-> TomcatDataSource
+	 *   	-> HikariDatasource
+	 *   	-> dbcp
+	 *   	-> dbcp2
+	 *   from spring 
+	 *   	-> DriverManagerdataSource
+	 *   
+	 */
 	@Bean
 	public DriverManagerDataSource getDataSource() {
 		DriverManagerDataSource dataSource=new DriverManagerDataSource();
