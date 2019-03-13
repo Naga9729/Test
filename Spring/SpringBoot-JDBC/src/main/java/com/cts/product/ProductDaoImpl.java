@@ -37,7 +37,7 @@ class ListAllProducts implements RowMapper<List<Product>>{
 	@Override
 	public List<Product> mapRow(ResultSet rs, int rowNum) throws SQLException {
 		
-		while(rs.next()) {
+		do {
 			Product prod=new Product();
 			prod.setId(rs.getString("id"));
 			prod.setName(rs.getString("name"));
@@ -46,7 +46,7 @@ class ListAllProducts implements RowMapper<List<Product>>{
 			
 			prods.add(prod);
 			
-		}
+		}while(rs.next());
 		return prods;
 	}
 	
