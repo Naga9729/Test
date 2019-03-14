@@ -35,11 +35,32 @@ public class MyController {
 
 	@RequestMapping("/s5")
 	public ModelAndView f5() {
+		
+		// JSTL -> JSP Standard Tag Library
 		System.out.println("--- This is f5 method");
+		
+		String cities[]= {"Chennai","Bangalore","Hyderabad","Pune"};
+		
+		Product prod=new Product();
+		prod.setId("P001");
+		prod.setName("Pen");
+		prod.setPrice(6664);
+		prod.setDescription("Red Ink");
+		
+		
+		
+		
 		String userName = "Ozvitha";
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("thr");
 		mav.addObject("uname", userName);
+		mav.addObject("product",prod);
+		mav.addObject("myCities",cities);
+		
+		
+		
+		
+		
 
 		return mav;
 	}
